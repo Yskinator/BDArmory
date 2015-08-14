@@ -701,26 +701,25 @@ namespace BahaTurret
 						UpdateLegacyTarget();
 					}
 
-					if(targetingMode == TargetingModes.Heat)
-					{
-						UpdateHeatTarget();
-					}
-					else if(targetingMode == TargetingModes.Radar)
-					{
-						UpdateRadarTarget();
-					}
-					else if(targetingMode == TargetingModes.Laser)
-					{
-						UpdateLaserTarget();
-					}
-					else if(targetingMode == TargetingModes.GPS)
-					{
-						UpdateGPSTarget();
-					}
-					else if(targetingMode == TargetingModes.AntiRad)
-					{
-						UpdateAntiRadiationTarget();
-					}
+				else if(targetingMode == TargetingModes.Heat)
+				{
+					UpdateHeatTarget();
+				}
+				else if(targetingMode == TargetingModes.Radar)
+				{
+					UpdateRadarTarget();
+				}
+				else if(targetingMode == TargetingModes.Laser)
+				{
+					UpdateLaserTarget();
+				}
+				else if(targetingMode == TargetingModes.GPS)
+				{
+					UpdateGPSTarget();
+				}
+				else if(targetingMode == TargetingModes.AntiRad)
+				{
+					UpdateAntiRadiationTarget();
 				}
 
 				
