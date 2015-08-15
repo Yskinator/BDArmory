@@ -1878,7 +1878,7 @@ namespace BahaTurret
 			}
 		}
 
-		void LookForCountermeasure()
+		bool FooledByLegacyFlares()
 		{
 			foreach (CMFlare flare in BDArmorySettings.Flares) {
 				if (flare != null) {
@@ -1894,11 +1894,11 @@ namespace BahaTurret
 					if (angle < 45 && (flare.transform.position - transform.position).sqrMagnitude < Mathf.Pow (flareAcquireMaxRange, 2) && chancePass && targetInView) {
 						//Debug.Log ("=Missile deflected via flare=");
 						//target = flare;
-						targetPosition = flare.transform.position;
-						return;
+						return true;
 					}
 				}
 			}
+			return false;
 		}
 		
 	}
