@@ -29,6 +29,7 @@ namespace BahaTurret
 		public static bool SMART_GUARDS = true;
 		public static float MAX_BULLET_RANGE = 8000;
 		public static float TRIGGER_HOLD_TIME = 0.3f;
+		public static float MAX_BOMB_AIMER_ALTITUDE = 5000;
 
 		public static bool ALLOW_LEGACY_TARGETING = true;
 
@@ -586,6 +587,8 @@ namespace BahaTurret
 				if(cfg.HasValue("MAX_BULLET_RANGE")) MAX_BULLET_RANGE = float.Parse(cfg.GetValue("MAX_BULLET_RANGE"));	
 
 				if(cfg.HasValue("TRIGGER_HOLD_TIME")) TRIGGER_HOLD_TIME = float.Parse(cfg.GetValue("TRIGGER_HOLD_TIME"));
+
+				if(cfg.HasValue("MAX_BOMB_AIMER_ALTITUDE")) MAX_BOMB_AIMER_ALTITUDE = float.Parse(cfg.GetValue("MAX_BOMB_AIMER_ALTITUDE"));
 
 				if(cfg.HasValue("ALLOW_LEGACY_TARGETING")) ALLOW_LEGACY_TARGETING = bool.Parse(cfg.GetValue("ALLOW_LEGACY_TARGETING"));
 

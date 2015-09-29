@@ -1275,7 +1275,7 @@ namespace BahaTurret
 		
 		bool AltitudeTrigger()
 		{
-			float maxAlt = Mathf.Clamp(BDArmorySettings.PHYSICS_RANGE * 0.75f, 2250, 5000);
+			float maxAlt = Mathf.Clamp(BDArmorySettings.PHYSICS_RANGE * 0.75f, 2250, BDArmorySettings.MAX_BOMB_AIMER_ALTITUDE);
 			double asl = vessel.mainBody.GetAltitude(vessel.findWorldCenterOfMass());
 			double radarAlt = asl - vessel.terrainAltitude;
 			
